@@ -34,6 +34,18 @@ Step 5 :- Now need to trun off systemd timesyncd service on the client.
 
 timedatectl set-ntp off
 
+Step 6 :- Your next steps is thet you need to install NTP in your client machine by using the commands.
+
+apt-get install ntp -y 
+
+Step 7 :- Edit the /etc/ntp.conf and add your NTP Server like that.
+
+vim server NTP-SERVER prefer iburst
+
+Save and Exit
+
+#############################################################################################################################
+
 
 
 
