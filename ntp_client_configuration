@@ -46,6 +46,12 @@ Save and Exit
 
 #############################################################################################################################
 
+Step 8 :- Now you need to restart the NTP Service and check NTP status.
+
+systemctl restart ntp
+systemctl status ntp
+
+
 
 
 
