@@ -39,15 +39,27 @@ vim /etc/ntp.conf
 # Use servers from the NTP Pool Project. Approved by Ubuntu Technical Board
 # on 2011-02-08 (LP: #104525). See http://www.pool.ntp.org/join.html for
 # more information.
+
 pool 0.in.pool.ntp.org iburst
 pool 1.in.pool.ntp.org iburst
 pool 2.in.pool.ntp.org iburst
 pool 3.in.pool.ntp.org iburst
 
-
 #################################################################################################################################
  Save and Exit
- 
+
+# Step 5 :- Now you need to restart the NTP service by using following commands.
+
+systemctl restart ntp
+systemctl status ntp
+
+# Step 6 :- Allow ntp port in network by using following commaands.
+
+ufw allow 123/udp
+
+
+
+
  
 
 
