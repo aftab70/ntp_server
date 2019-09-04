@@ -32,4 +32,8 @@ ntpdate NTP-SERVER
 
 Step 5 :- Now need to trun off systemd timesyncd service on the client.
 
+timedatectl set-ntp off
+
+
+
 
