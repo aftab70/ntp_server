@@ -3,3 +3,33 @@
 #################################                Support - aftab70@ymail.com    ################################################
 ################################################################################################################################
 ################################################################################################################################
+
+# Step 1:- You need to install ntpdate by following the commands.
+
+apt-get install ntpdate -y 
+
+# Step 2 :- You need to configure domain of the NTP server or you can make changes in /etc/hots file like that.
+
+vim /etc/hosts
+
+Add the following files as given below :--
+
+192.168.0.1       NTP-SERVER
+
+Save and Exit
+
+###############################################################################################################################
+
+# Step 3:- Now you need to ping your NTP server you domain name which you have implemented. 
+
+ping NTP-SERVER
+
+#You should get 192.168.0.1 IP address in return.
+
+Step 4: - Now test manually client machine’s time is synchronized with NTP server or not by following the commands.
+
+ntpdate NTP-SERVER
+
+Step 5 :- Now need to trun off systemd timesyncd service on the client.
+
+
