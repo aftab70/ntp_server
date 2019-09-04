@@ -51,6 +51,15 @@ Step 8 :- Now you need to restart the NTP Service and check NTP status.
 systemctl restart ntp
 systemctl status ntp
 
+Step 9 :- Its time check list of View the Time Synchronization Queue by following the commands.
+
+ntpq -ps
+
+
+########################################## Your installation is successfull #################################################
+
+
+
 
 
 
