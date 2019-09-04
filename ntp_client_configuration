@@ -39,7 +39,7 @@ Step 7 :- Edit the /etc/ntp.conf and add your NTP Server like that.
 
 vim /etc/ntp.conf
 
-vim server NTP-SERVER prefer iburst
+server NTP-SERVER prefer iburst
 
 Save and Exit
 
